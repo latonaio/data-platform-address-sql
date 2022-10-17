@@ -10,6 +10,9 @@ CREATE TABLE `data_platform_address_address_data`
     `District`              varchar(6) DEFAULT NULL,    -- 新規追加
     `StreetName`            varchar(200) DEFAULT NULL,
     `CityName`              varchar(200) DEFAULT NULL,
+    `Builiding`             varchar(100) DEFAULT NULL,  -- 新規追加
+    `Floor`                 int(100) DEFAULT NULL,      -- 新規追加
+    `Room`                  int(100) DEFAULT NULL,      -- 新規追加
     PRIMARY KEY (`AddressID`, `ValidityEndDate`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;
