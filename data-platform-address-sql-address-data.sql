@@ -4,16 +4,16 @@ CREATE TABLE `data_platform_address_address_data`
     `ValidityEndDate`       date NOT NULL,
     `ValidityStartDate`     date NOT NULL,
     `PostalCode`            varchar(10) NOT NULL,
-    `LocalRegion`           varchar(3) NOT NULL,        -- 名称変更
+    `LocalRegion`           varchar(3) NOT NULL,
     `Country`               varchar(3) NOT NULL,
-    `GlobalRegion`          varchar(3) NOT NULL,        -- 新規追加
-    `TimeZone`              varchar(3) NOT NULL,        -- 新規追加
-    `District`              varchar(6) DEFAULT NULL,    -- 新規追加
+    `GlobalRegion`          varchar(3) NOT NULL,
+    `TimeZone`              varchar(3) NOT NULL,
+    `District`              varchar(6) DEFAULT NULL,
     `StreetName`            varchar(200) NOT NULL,
     `CityName`              varchar(200) NOT NULL,
-    `Builiding`             varchar(100) DEFAULT NULL,  -- 新規追加
-    `Floor`                 int(4) DEFAULT NULL,        -- 新規追加
-    `Room`                  int(8) DEFAULT NULL,        -- 新規追加
+    `Builiding`             varchar(100) DEFAULT NULL,
+    `Floor`                 int(4) DEFAULT NULL,
+    `Room`                  int(8) DEFAULT NULL,
     
     PRIMARY KEY (`AddressID`, `ValidityEndDate`),
 
