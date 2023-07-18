@@ -4,7 +4,7 @@ CREATE TABLE `data_platform_address_address_data`
     `ValidityStartDate`     date NOT NULL,
     `ValidityEndDate`       date NOT NULL,
     `PostalCode`            varchar(10) NOT NULL,
-    `LocalSubRegion`        varchar(3) NOT NULL,
+    `LocalSubRegion`        varchar(3) DEFAULT NULL,
     `LocalRegion`           varchar(3) NOT NULL,
     `Country`               varchar(3) NOT NULL,
     `GlobalRegion`          varchar(3) NOT NULL,
@@ -15,6 +15,8 @@ CREATE TABLE `data_platform_address_address_data`
     `Building`              varchar(100) DEFAULT NULL,
     `Floor`                 int(4) DEFAULT NULL,
     `Room`                  int(8) DEFAULT NULL,
+    `CreationDate`          date NOT NULL,
+    `LastChangeDate`        date NOT NULL,
     `IsMarkedForDeletion`   tinyint(1) DEFAULT NULL,
     
     PRIMARY KEY (`AddressID`, `ValidityStartDate`, `ValidityEndDate`),
